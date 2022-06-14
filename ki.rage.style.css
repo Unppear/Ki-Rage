@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+:root {
+    --red: rgb(255, 0, 0);
+    --black: rgb(60, 60, 60);
+}
+.kiin, .kiworld, .kiprin, .kigods {
+    background-color: white;
+    padding: 1cm;
+    border-radius: 15px;
+    margin: 1cm 7cm;
+    border: 3px solid var(--red);
+   
+}
+h2 {
+    border: 3px solid var(--red);
+    border-radius: 30px;
+    margin: 0 7cm;
+    padding: 15px;
+    font-family: 'Major Mono Display', monospace;
+   box-shadow: 5px 4px 4px gray;
+}
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+body {
+    background-color: black;
+    margin: 0;
+}
+header {
+    background-color: black;
+    padding: 40px;
+    margin-bottom: -15px;
+    border-radius: 5px;
+    animation-name: titulo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes titulo {
+  0% {background-color: black;}
+  50% {background-color: white;} 
+  100% {background-color: black;}
+}
+h1 {
+    color: white;
+    animation-name: h;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    font-family: 'Orbitron', sans-serif;
+}
+@keyframes h {
+    0% {color: white;}
+    50% {color: black; text-shadow: 6px 2px 3.5px var(--black);}
+    100% {color: white;}
+}
+#navbar {
+    background-color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 3px solid red ;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    position: sticky;
+}
+li.dropdown {
+    display: inline-block;
+    transition: 1s;
+}
+.dropdown-content {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+    border: 2px solid var(--red);
+    transition: 1s;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#navbar a {
+    text-decoration: none;
+    display: flex;
+    padding: 15px 20px;
+    color: black;
+    transition: 0.5s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+#navbar a:hover {
+    background-color: var(--red);
+    color: white;
+    
+}
+p {
+    font-family: 'Caveat', cursive;
+    text-align: left;
+}
+h3 {
+    font-family: 'Poiret One', cursive;
+    border-bottom: 2px solid var(--red);
+    margin: 0 7cm;
+}
