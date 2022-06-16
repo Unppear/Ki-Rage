@@ -25,9 +25,28 @@ h2 {
 .flexcontainer{
     display: flex;
     flex-wrap: wrap;
+    background-color: black;
+}
+#pagination {
+    background-color: white;
+    border: 3px solid var(--red);
+    border-radius: 30px;
+    padding: 5px;
+   margin-left: 15cm;
+   
+}
+#pagination a {
+    text-decoration: none;
+    margin: 0 0.5cm;
+    color: black;
+    padding: 8px 16px;
+    display: inline;
+}
+#pagination a:hover {
+    background-color: red;
+    color: white;
 }
 body {
-    background-color: black;
     margin: 0;
 }
 header {
