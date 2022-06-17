@@ -39,19 +39,29 @@ h2 {
     100% {background-color: black;}
 }
 #pagination {
-    background-color: white;
-    border: 3px solid var(--red);
-    border-radius: 30px;
-    padding: 5px;
+    padding: 10px 25px;
    margin-left: 15cm;
-   
+   margin-bottom: 0.5cm;
+   background-color: white;
+   border: 3px solid var(--red);
+   border-radius: 10px;
 }
 #pagination a {
     text-decoration: none;
-    margin: 0 0.5cm;
     color: black;
-    padding: 8px 16px;
-    display: inline;
+    border: none;
+    padding: 13px 25px;
+    margin-right: -25px;
+}
+#pagination a:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: -25px;
+}
+#pagination a:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: -25px;
 }
 #pagination a:hover {
     background-color: red;
