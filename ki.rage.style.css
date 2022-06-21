@@ -33,9 +33,7 @@ h2 {
 }
 @keyframes flex {
     0% {background-color: black;}
-    25% {background-color: gray;}
-    50% {background-color: white;}
-    75% {background-color: gray;}
+    50% {background-color: gray;}
     100% {background-color: black;}
 }
 #pagination {
